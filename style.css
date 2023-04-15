@@ -66,3 +66,78 @@ blockquote {
 	- https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
 */
 
+:root {
+	--h: #a3cb38;
+}
+
+body{
+	color: #636e72
+}
+
+article {
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	grid-auto-rows:auto;
+	gap: 40px;
+}
+
+header{
+	grid-column: 2 / 3;
+	color: var(--h);
+	font-size: 48px;
+}
+
+h1{
+	margin: 50px;
+}
+
+header p {
+	color: #b2bec3;
+	font-size: 18px;
+}
+
+p {
+	grid-column: 2 / 3;
+}
+
+figure {
+	grid-column: 1 / -1;
+	margin: 0;
+}
+
+figcaption { color: #b2bec3;}
+
+img{
+	width: 100%;
+	object-fit: cover;
+}
+
+.tip-vlevo {
+	grid-column: 1 / 2;
+}
+
+.tip-vpravo {
+	grid-column: 3 / -1;
+}
+
+.tip p {
+	background-color: #edf3f5;
+	color: #636e72;
+	padding: 20px;
+}
+
+h2 {
+	grid-column: 2 / 3;
+	color: #a3cb38;
+}
+
+blockquote {
+	grid-column: 2 / -1;
+	font-size: 32px;
+	color: #b2bec3;
+
+}
+
+a {
+	color: #ee5a24;
+}
